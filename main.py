@@ -36,7 +36,8 @@ cl_persona = 'Someone'
 cl_keywords = ['Responsible', 'Hardworking', 'Wierd']
 
 def random_short_sleep():
-    time.sleep(random.randint(1, 2))
+    time.sleep(1)
+    
 
 def random_long_sleep():
     time.sleep(random.randint(5, 10))
@@ -71,7 +72,6 @@ driver.implicitly_wait(5)
 if not does_element_exist(driver, USE_WIZARD_XPATH):
         print("Use wizard doesnt exist")
 
-title = driver.title
 useWizard_el = driver.find_element(By.XPATH, USE_WIZARD_XPATH)
 print(useWizard_el)
 useWizard_el.click()
